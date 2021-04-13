@@ -59,4 +59,4 @@ onError = (event: ErrorEvent): void => {
 }
 }
 
-//El hiram es gay y se la come completa
+//El Darío me la viene pelando
