@@ -20,7 +20,7 @@ export class AppComponent{
         tokenizationSpecification: {
           type: 'PAYMENT_GATEWAY',
           parameters: {
-            gateway: 'example', 
+            gateway: 'example',
             gatewayMerchantId: 'examplegatewayMerchantId',
 
           },
@@ -59,3 +59,4 @@ onError = (event: ErrorEvent): void => {
 }
 }
 
+//El hiram es gay y se la come completa
