@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { GooglePayButtonModule } from '@google-pay/button-angular';
 
 import { AppComponent } from './app.component';
 import { PagosComponent } from './pagos/pagos.component';
@@ -11,8 +10,7 @@ import { PagosComponent } from './pagos/pagos.component';
     PagosComponent  
   ],
   imports: [
-    BrowserModule,
-    GooglePayButtonModule
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]
