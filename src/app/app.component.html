@@ -1,21 +1,2 @@
 
-<div class="container">
-    <header class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
-            <h1>COLEGIO PIERRE FAURE</h1>
-          <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-            <button>Cancelar</button>
-          </nav>
-            <br>
-    </header>
-    <google-pay-button
-    environment = "TEST"
-    buttonType = "buy"
-    buttonColor = "black"
-    [paymentRequest]= "paymentRequest"
-    loadpaymentdata="OnLoadPaymentData($event)"
-    [paymentAuthorizedCallback]="onPaymentDataAuthorized"
-    (error)="onError($event)"
-    ></google-pay-button>
-
-
-
+<app-pagos></app-pagos>
