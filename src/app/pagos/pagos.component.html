@@ -3,30 +3,36 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="pagos.component.css">
   </head>
 
   <body>
     <header>
-      <div class="encabezado">
-        <img
+        <div class="ancho">
+         <!--  <img
           src="http://www.pierrefaureobregon.edu.mx/logos/aipfnlogo.jpg"
           alt="Logo Pierre Faure"
-          width="9%"
-        /><hr>
-      </div>
+          width="6%"
+        /> -->
+        <h1 class="colegio">Colegio Pierre Faure</h1>
+      <hr>
+        </div>
     </header>
     <div class="formulario">
-      <h2>Pago de servicios</h2>
-      <label>Nombre del alumno:</label>
-      <input name="NombreAlumno" type="text" value="Josué Hiram" disabled/><br>
-      <label>Apellido Paterno:</label>
-      <input name="A-paterno" type="text" value="Álvarez" disabled/><br>
-      <label>Apellido Materno:</label>
-      <input name="A-materno" type="text" value="Álvarez" disabled/><br>
-      <label>Grado:</label>
-      <input name="Grado" type="text" value="3°" disabled/><br>
-      <label>Grupo:</label>
-      <input name="Grupo" type="text" value="B" disabled/><br>
+      <div class="anchoformulario">
+        <h2 class="sub">Pago de servicios</h2><br><br>
+        <label class="cabeceras">Nombre del alumno:</label>
+        <label class="informacion">Josué Hiram</label><br><br>
+        <label class="cabeceras">Apellido Paterno:</label>
+        <label class="informacion">Álvarez</label><br><br>
+        <label class="cabeceras">Apellido Materno:</label>
+        <label class="informacion">Martínez</label><br><br>
+        <label class="cabeceras">Grado:</label>
+        <label class="informacion">3°</label><br><br>
+        <label class="cabeceras">Grupo:</label>
+        <label class="informacion">B</label><br><br>
+        <h2 class="total">Total a pagar: $1500</h2> <br><br>
+      </div>
     </div>
     <div class="boton">
       <form
@@ -60,9 +66,12 @@
         <input name="monto" type="hidden" value="100.00" />
         <input name="plan" type="hidden" value="Colegio Pierre Faure" />
         <input name="mensualidades" type="hidden" value="00" />
-        <input class="" name="submit" type="submit" value="Pagar" />
+        <input class="cancelar" name="submit" type="button" value="Cancelar" />
+        <input class="pago" name="submit" type="submit" value="Pagar" />
       </form>
     </div>
-    <footer>Derechos reservados Colegio Pierre Faure 2021</footer>
+    <footer>
+      <p>Derechos Reservados &copy; Colegio Pierre Faure.</p>
+    </footer>
   </body>
 </html>
