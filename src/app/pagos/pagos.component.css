@@ -19,20 +19,21 @@ color: #273c75;
 }
 
 .colegio{
-padding-top: 2%;
-background: #dcdde1 ;
-}
-
-.ancho{
-width: 80%;
-height: auto;
-margin: auto;
+padding-top: 1%;
 }
 
 .formulario{
 width: 100%;
 text-align: center;
 margin-top: 3%;
+}
+
+.anchoformulario{
+border: 1px solid black;
+width: 50%;
+text-align: center;
+margin: auto;
+background: #f5f6fa  ;
 }
 
 .sub{
@@ -46,31 +47,25 @@ font-size: 150%;
 background: transparent;
 }
 
-.anchoformulario{
-border: 1px solid black;
-width: 50%;
-text-align: center;
-margin: auto;
-background: #f5f6fa  ;
-}
-
 label{
 font-size:x-large;
 background: transparent;
-text-align:left;
-
 }
 
 .informacion{
-padding: auto;
+float: right;
+margin-right: 18%;
 }
 .cabeceras{
-padding: auto;
+float: left;
+margin-left: 18%;
 }
 
 input{
 font-size:large;
 text-align: center;
+margin-top: 1%;
+margin-bottom: 1%;
 }
 
 .boton{
@@ -79,19 +74,34 @@ padding: 1.5%;
 
 .pago{
 padding: 5px 10px 5px 10px;
-border-radius: 15%;
+border-radius: 20%;
 cursor: pointer;
 background: #dcdde1;
+border: 2px solid #273c75;
+color: #273c75;
+transition: background 1s, color 1s;
 }
 
 .cancelar{
 padding: 5px 10px 5px 10px;
-border-radius: 15%;
+border-radius: 20%;
 cursor: pointer;
 margin-right: 5%;
 background: red;
 color: white;
+transition: background 1s, color 1s;
 }
+
+.cancelar:hover{
+background: white;
+color: red;
+}
+
+.pago:hover{
+background: #273c75;
+color: #dcdde1;
+}
+
 
 footer{
 box-sizing: border-box;
@@ -99,5 +109,11 @@ text-align: center;
 border: 1px solid black;
 background: #273c75;
 color: white;
-padding: 3.52%;
+padding: 2.9%;
 }
+
+::-webkit-scrollbar {
+display: none;
+}
+
+
