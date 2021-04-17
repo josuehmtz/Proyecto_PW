@@ -11,4 +11,12 @@ header .contenedor{
 
 .menu{
   display: flex;
+  list-style-type: none;
+  text-align: center;
+  overflow: hidden;
+  display: block;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
 }
+
