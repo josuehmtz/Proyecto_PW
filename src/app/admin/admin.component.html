@@ -6,14 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="admin.component.css">
 </head>
-<body>
+<body >
   <header>
     <div class="contenedor">
     <h1>Colegio Pierre Faure</h1>
       <nav class="menu">
         <ul>
-          <li><a href="/src/app/pagos/pagos.component.html">Pago</a></li>
-          <li><a href="/src/app/iniciosesion/iniciosesion.component.html">Cerrar sesion</a></li>
+          <li style="cursor: pointer; " (click) = "irPago()">Pago</li>
+          <!--<button style="cursor: pointer; " (click) = "irPago()">Pago</button>-->
+          <li>Cerrar Sesion</li>
         </ul>
       </nav>
     </div>
@@ -23,3 +24,4 @@
   </header>
 </body>
 </html>
+
