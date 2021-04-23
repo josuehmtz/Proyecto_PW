@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, ElementRef, Injectable, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { Persona } from '../persona.model';
@@ -15,7 +16,7 @@ export class AdminComponent implements OnInit {
   nombreInput!: ElementRef;
   @ViewChild("apellidoInput")
   apellidoInput!: ElementRef;
-  constructor(private router:Router, private proyectoService:ProyectoServices) { }
+  constructor(private router:Router, private proyectoService:ProyectoServices, private httpClient:HttpClient) { }
 
   ngOnInit(): void {
   }
@@ -25,6 +26,8 @@ export class AdminComponent implements OnInit {
     this.proyectoService.agregarPersona(persona1);
     this.router.navigate(["admin"])
   }
+
+  
 
   irPago(){
     this.router.navigate(["pago"])

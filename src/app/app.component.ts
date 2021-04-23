@@ -1,4 +1,5 @@
 import { Component, OnInit} from '@angular/core';
+import { Router } from '@angular/router';
 import { Persona } from './persona.model';
 import { ProyectoServices } from './proyecto.services';
 
@@ -11,9 +12,14 @@ import { ProyectoServices } from './proyecto.services';
 export class AppComponent implements OnInit{
 
   personas:Persona[]=[]
-  constructor(private proyectoService:ProyectoServices, ){}
+  constructor(private proyectoService:ProyectoServices, private router:Router){}
 
-  ngOnInit():void{
+  ngOnInit(){
     this.personas=this.proyectoService.personas;
+    //this.proyectoService.obtenerPersonas().subscribe((personas:Persona[]) => {
+      //this.personas=personas;
+      //this.proyectoService.setPersonas(personas);
+    //})
   }
+
 }
