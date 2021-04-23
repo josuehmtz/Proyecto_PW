@@ -9,8 +9,8 @@ export class DataServices implements OnInit{
   guardarPersonas(personas:Persona[]){
     this.httpClient.put("https://proyectopw-4fc02-default-rtdb.firebaseio.com/personas.json", personas).subscribe
     (response => console.log("Resultado de guardar personas: "+ response),
-    error => console.log("Erroe al guardar personas" + error));
+    error => console.log("Error al guardar personas" + error));
   }
-  
+
   ngOnInit(){}
 }

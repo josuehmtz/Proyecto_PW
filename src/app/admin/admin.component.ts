@@ -20,13 +20,12 @@ export class AdminComponent implements OnInit {
   ngOnInit(): void {
   }
 
-
-
   onGuardarPersona(){
     let persona1 = new Persona(this.nombreInput, this.apellidoInput);
     this.proyectoService.agregarPersona(persona1);
     this.router.navigate(["admin"])
   }
+
   irPago(){
     this.router.navigate(["pago"])
   }
