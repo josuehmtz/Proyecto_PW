@@ -1,8 +1,9 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, Injectable, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { Persona } from '../persona.model';
 import { ProyectoServices } from '../proyecto.services';
 
+@Injectable()
 @Component({
   selector: 'app-admin',
   templateUrl: './admin.component.html',
@@ -11,17 +12,24 @@ import { ProyectoServices } from '../proyecto.services';
 export class AdminComponent implements OnInit {
 
 
-  nombreInput:string ="";
-  apellidoInput:string="";
+  //nombreInput:string ="";
+  //apellidoInput:string="";
 
- // @ViewChild("nombreInput") nombreInput:ElementRef;
+  //nombreInput:string ="";
+  //apellidoInput:string="";
+
+
+  @ViewChild("nombreInput")
+  nombreInput!: ElementRef;
+  @ViewChild("apellidoInput")
+  apellidoInput!: ElementRef;
   constructor(private router:Router, private proyectoService:ProyectoServices) { }
 
   ngOnInit(): void {
   }
 
   onGuardarPersona(){
-    let persona1 = new Persona(this.nombreInput, this.apellidoInput);
+    let persona1 = new Persona(this.nombreInput.nativeElement.value, this.apellidoInput.nativeElement.value);
     this.proyectoService.agregarPersona(persona1);
     this.router.navigate(["admin"])
   }

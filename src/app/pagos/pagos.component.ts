@@ -15,4 +15,8 @@ export class PagosComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  cancelar(){
+    this.router.navigate(["admin"])
+  }
+
 }
