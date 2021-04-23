@@ -11,14 +11,6 @@ import { ProyectoServices } from '../proyecto.services';
 })
 export class AdminComponent implements OnInit {
 
-
-  //nombreInput:string ="";
-  //apellidoInput:string="";
-
-  //nombreInput:string ="";
-  //apellidoInput:string="";
-
-
   @ViewChild("nombreInput")
   nombreInput!: ElementRef;
   @ViewChild("apellidoInput")
