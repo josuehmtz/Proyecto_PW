@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="admin.component.css">
 </head>
-<body >
+<body>
   <header>
     <div class="contenedor">
     <h1>Colegio Pierre Faure</h1>
@@ -17,11 +17,35 @@
           <li>Cerrar Sesion</li>
         </ul>
       </nav>
+
     </div>
     <div class="calendario">
 
     </div>
+
   </header>
 </body>
+
+<label for="Nombre" class="sr-only">Nombre</label>
+    <input
+      type="text"
+      name="nombre"
+      id="nombre"
+      placeholder="nombre"
+      class="form-control"
+      #nombreInput
+      required
+      />
+      <label for="Apellido" class="sr-only">Apellido</label>
+      <input
+        type="text"
+        name="apellido"
+        id="apellido"
+        placeholder="apellido"
+        class="form-control"
+        #apellidoInput
+        required
+      />
+      <button type="submit" (click) = "onGuardarPersona()" >Crear Usuario</button>
 </html>
 

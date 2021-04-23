@@ -4,7 +4,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { PagosComponent } from './pagos/pagos.component';
 import { AdminComponent } from './admin/admin.component';
 
-const routes : Routes = [{path : "pago", component:PagosComponent},
+const routes : Routes = [{path : "" , component:AdminComponent},
+{path:"admin", component:AdminComponent},
+{path:"pago", component:PagosComponent},
 ]
 
 @NgModule({

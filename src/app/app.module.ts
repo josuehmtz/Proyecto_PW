@@ -5,6 +5,10 @@ import { AppComponent } from './app.component';
 import { PagosComponent } from './pagos/pagos.component';
 import { AdminComponent } from './admin/admin.component';
 import { AppRoutingModule } from './app-routing.module';
+import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http'
+import { ProyectoServices } from './proyecto.services';
+import { DataServices } from './data.services';
 
 @NgModule({
   declarations: [
@@ -14,9 +18,11 @@ import { AppRoutingModule } from './app-routing.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ProyectoServices, DataServices],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
