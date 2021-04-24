@@ -20,7 +20,7 @@ import { DataServices } from './data.services';
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [ProyectoServices, DataServices],
   bootstrap: [AppComponent]

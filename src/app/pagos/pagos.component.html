@@ -3,28 +3,35 @@
 <html lang="es">
   <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="pagos.component.css">
+    <link rel="stylesheet" href="pagos.component.css" />
   </head>
 
   <body>
     <header>
-        <img class="Logo" src="/assets/images/logolargo.png" alt="Logo Pierre Faure" width="37%" >
-      <hr>
+      <img
+        class="Logo"
+        src="/assets/images/logolargo.png"
+        alt="Logo Pierre Faure"
+        width="37%"
+      />
+      <hr />
     </header>
     <div class="formulario">
       <div class="anchoformulario">
-        <h2 class="sub">Pago de servicios</h2><br><br>
+        <h2 class="sub">Pago de servicios</h2>
+        <br /><br />
         <label class="cabeceras">Nombre del alumno:</label>
-        <label class="informacion">Josué Hiram</label><br><br>
+        <label class="informacion">Josué Hiram</label><br /><br />
         <label class="cabeceras">Apellido Paterno:</label>
-        <label class="informacion">Álvarez</label><br><br>
+        <label class="informacion">Álvarez</label><br /><br />
         <label class="cabeceras">Apellido Materno:</label>
-        <label class="informacion">Martínez</label><br><br>
+        <label class="informacion">Martínez</label><br /><br />
         <label class="cabeceras">Grado:</label>
-        <label class="informacion">3°</label><br><br>
+        <label class="informacion">3°</label><br /><br />
         <label class="cabeceras">Grupo:</label>
-        <label class="informacion">B</label><br><br><br><br>
-        <h2 class="total">Total a pagar: $1500</h2> <br><br>
+        <label class="informacion">B</label><br /><br /><br /><br />
+        <h2 class="total">Total a pagar: $1500</h2>
+        <br /><br />
       </div>
     </div>
     <div class="boton">
@@ -56,10 +63,16 @@
           type="hidden"
           value="http://empresa.com/webhook"
         />
-        <input name="monto" type="hidden" value="1500.00"  />
-        <input name="plan" type="hidden" value="Colegio Pierre Faure"  />
+        <input name="monto" type="hidden" value="1500.00" />
+        <input name="plan" type="hidden" value="Colegio Pierre Faure" />
         <input name="mensualidades" type="hidden" value="00" />
-        <input class="cancelar" name="submit" type="button" value="Cancelar" (click) = "cancelar()"/>
+        <input
+          class="cancelar"
+          name="submit"
+          type="button"
+          value="Cancelar"
+          (click)="cancelar()"
+        />
         <input class="pago" name="submit" type="submit" value="Pagar" />
       </form>
     </div>
@@ -69,4 +82,3 @@
     </footer>
   </body>
 </html>
-

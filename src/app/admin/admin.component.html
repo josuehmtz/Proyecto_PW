@@ -1,51 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="admin.component.css">
-</head>
-<body>
-  <header>
-    <div class="container">
-      <img class="Logo" src="/assets/images/logolargo.png" alt="Logo Pierre Faure" width="25%" >
-      <nav class="menu">
-        <ul>
-          <li style="cursor: pointer; " (click) = "irPago()">Pago</li>
-          <li style="cursor: pointer; " (click) = "irPago()">Usuarios</li>
-          <li>Cerrar Sesion</li>
-        </ul>
-      </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="admin.component.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
 
-    </div>
-    <div class="calendario">
+        <img
+          class="Logo"
+          src="/assets/images/logolargo.png"
+          alt="Logo Pierre Faure"
+          width="25%"
+        />
+        <nav class="menu">
+          <ul>
+            <li style="cursor: pointer" (click)="irPago()">Pago</li>
+            <li style="cursor: pointer" (click)="irPago()">Usuarios</li>
+            <li>Cerrar Sesion</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="calendario"></div>
+      <div></div>
+    </header>
+  </body>
 
-    </div>
 
-  </header>
-</body>
+  <label for="Nombre" class="sr-only">Nombre</label>
+  <input
+    type="text"
+    name="nombre"
+    id="nombre"
+    placeholder="nombre"
+    class="form-control"
+    #nombreInput
+    required
+  />
 
-<label for="Nombre" class="sr-only">Nombre</label>
-    <input
-      type="text"
-      name="nombre"
-      id="nombre"
-      placeholder="nombre"
-      class="form-control"
-      #nombreInput
-      required
-      />
-      <label for="Apellido" class="sr-only">Apellido</label>
-      <input
-        type="text"
-        name="apellido"
-        id="apellido"
-        placeholder="apellido"
-        class="form-control"
-        #apellidoInput
-        required
-      />
-      <button type="submit" (click) = "onGuardarPersona()" >Crear Usuario</button>
+  <label for="Apellido" class="sr-only">Apellido</label>
+  <input
+    type="text"
+    name="apellido"
+    id="apellido"
+    placeholder="apellido"
+    class="form-control"
+    #apellidoInput
+    required
+  />
+  <button type="submit" (click) = "onGuardarPersona()" >Crear Usuario</button>
+  <hr>
+  <!--<button type="submit" (click) = "onEliminarPersona()">X</button>-->
 </html>
+
 
