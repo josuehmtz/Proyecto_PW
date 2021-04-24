@@ -3,11 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { PagosComponent } from './pagos/pagos.component';
+import { DbtestComponent } from './dbtest/dbtest.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PagosComponent  
+    PagosComponent,
+    DbtestComponent  
   ],
   imports: [
     BrowserModule
